@@ -1,0 +1,42 @@
+<div id="w">
+	<div class="logo">
+		<a href="__URL__/index"><img src="__PUBLIC__/images/ls_logonew.png"/><img src="__PUBLIC__/images/hitpic.png" alt=""/></a>
+	</div>
+	<div class="search">
+        <input type="text" name="sou" id="sou" required  placeholder="请输入你要检索的内容"/>
+        <button id="send"><i></i></button>
+    </div>
+    <div class="shopping">
+    	<if condition="$username">
+	    	<a href="__APP__/Home/User/home"><i></i>购物车
+	    	    <span class="count">0</span>
+	    	</a>
+	    	<div>
+	    		<ul class="sbuy">
+	    			<li>
+	    				<img src="" />
+	    				<span>aaaaaa</span>
+	    				<span>aaaa</span>
+	    				<b>￥xx</b>
+	    				<a href="">cccc</a>
+	    			</li>
+	    				购物车还没有挑选商品，<a href="">现在去挑选</a>
+	    		</ul>
+	    	</div>
+    	<else/>
+	    	<a href="#"><i></i>购物车
+	    	    <span class="count">0</span>
+	    	</a>
+    	</if>
+    </div>
+</div>
+<div id="nav">
+    <ul>
+      <li><a href="__APP__/Home/Index/index">首页</a></li>
+      <li><a href="#">女装/男装</a></li>
+      <li><a href="#">日用百货</a></li>
+      <li><a href="#">户外运动</a></li>
+      <li><a href="#">数码家电</a></li>
+      <li><a href="#">食品美食</a></li>
+    </ul>
+</div>

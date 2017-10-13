@@ -1,0 +1,102 @@
+.address{z-index:-1;}
+.myForm{z-index:;}
+.address>h1,.myForm>h1{
+  font-weight: normal;
+  background-color: #6FC1FF;
+  padding: 15px 0;
+}
+.address>i{
+  float: left;
+  margin: 15px 10px 0;
+  width: 40px;
+  height: 40px;
+  background:url(/lianshuomai/Public/images/add.png) no-repeat;
+}
+.address>a{
+  padding: 10px;
+  border:1px solid #9E9E9E;
+  width: 176px;
+  margin: 10px 50px 0 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+thead{
+  border-bottom:1px solid #000;
+}
+.address>table{
+  border-collapse: collapse;
+  margin-top:25px;
+}
+.address>table th{
+  padding: 8px 30px;
+  border-bottom: 1px solid #ddd;
+}
+.address>table th:nth-child(3),.addres>table th:nth-child(6){
+  padding: 8px 88px;
+}
+.myForm>i{
+  float: left;
+  margin: 15px 10px;
+  width: 40px;
+  height: 40px;
+  background:url(/lianshuomai/Public/images/buycar.png) no-repeat;
+}
+.myForm>ul>li{
+  float: left;
+  margin-right: 25px;
+  font-size: 15px;
+  list-style: none;
+}
+.myForm>ul>li a{
+  text-decoration: none;
+  color:#000000;
+}
+.myForm>ul>li a:hover{
+  color:#007EF3;
+}
+#cart{
+  border-collapse: collapse;
+  width: 856px;
+  text-align: center;
+  position:relative;
+}
+#cart th{
+  border-top: 1px solid #ddd;
+  padding: 10px 35px;
+}
+#cart td{
+  min-height:40px;
+  line-height:80px;
+  border-top:1px solid #f1f1f1;
+  border-bottom:1px solid #f1f1f1;
+  padding:5px 15px;
+  vertical-align: top;
+}
+#cart td>img{vertical-align: middle;width:70px;}
+#cart thead input{
+    vertical-align: middle;
+}
+#cart tbody input[type='checkbox']{
+  float:left;
+  margin-right: 10px;
+}
+#cart tbody>h1{
+  font-weight: normal;
+  position:absolute;
+  top:180px;
+  margin:0 auto;
+  width:850px;
+  height:50px;
+}
+#cart a{
+  text-decoration:none;
+  color:#666;
+}
+#cart a:hover{
+  color:#E4393C;
+}
+#cart tbody td span{
+  font-size: 17px;
+  font-weight: bold;
+}

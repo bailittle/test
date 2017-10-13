@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="__PUBLIC__/css/reset.css"/>
+        <link rel="stylesheet" href="__PUBLIC__/css/home.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/pro.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/nav.css" />
+	</head>
+	<body>
+		<!-- header -->
+        <include file='Public/tpl/header.html'/>
+        <!-- nav -->
+        <include file="Public/tpl/nav.html"/>
+        <div id="section">
+		    <div>
+		      <div class='sec_top'>
+		        <ul>
+		          <li>&nbsp;><a href="javascript:;">&nbsp;&nbsp;连衣裙</a>&nbsp;</li>
+		        </ul>
+		      </div>
+		      <div class="sec_middle" id='plist'>
+		        <ul>
+		          <volist name="rows" id="data">
+		            <li>
+		              <a href="__URL__/proDetail"><img src="__PUBLIC__/{$data.pic}"/></a>
+		              <a href="__URL__/proDetail"><h4>{$data.pname|mb_substr=0,15}</h4></a>
+		              <a href="__URL__/proDetail"><h3>￥{$data.price}</h3></a>
+		              <a href="{$data.pid}" class='addcart'><img src="__PUBLIC__/images/pinkcar.png"/></a>
+		            </li>
+		          </volist>
+		        </ul>
+		        <ol class="pager">
+		          {$pageStr}
+		        </ol>
+		      </div>
+		    </div>
+		</div>
+        <!-- footer -->
+        <include file='Public/tpl/footer.html'/>
+	</body>
+</html>

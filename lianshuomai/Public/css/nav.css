@@ -1,0 +1,133 @@
+/* 网页台头  */
+#w{
+	height:64px;
+    padding:35px;
+    width: 100%;
+    background: #F6F6F6;
+    border-bottom: 1px solid #ccc;
+}
+#w .logo{
+	float: left;
+	margin-left: 220px;
+}
+#w>div{
+	float: left;
+}
+#w>div.search{
+   margin-top:10px;
+   margin-left: 100px;
+   position:relative;
+ }
+ #w>div>input{
+   height:32px;
+   width:450px;
+   float:left;
+   padding:0 5px;
+   border:2px solid #FF6600;
+ }
+ #w>div>button{
+   float:left;
+   height:36px;
+   width: 46px;
+   border:0;
+   background: url("../images/homesearchbtn.jpg") no-repeat;
+}
+#w .shopping{
+   float: right;
+   margin: 10px 400px 0 0;
+   height: 34px;
+   width: 150px;
+   border: 1px solid #ccc;
+   z-index: 11;
+   position: relative;
+}
+.shopping>a{
+	color: #000;
+}
+.shopping>a>i{
+	display: inline-block;
+    height: 21px;
+    width: 24px;
+    position: relative;
+    top: 5px;
+    margin:0 10px;
+    background: url(../images/orangecar.png) no-repeat 0 0px;
+}
+.shopping>a>span{
+	display: inline-block;
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    line-height: 20px;
+    background: #FF6600;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+}
+.shopping>div{
+	position: absolute;
+    top: 46px;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+    line-height: 144px;
+    overflow: hidden;
+    z-index: 500;
+    display: none;
+}
+.sbuy{
+  overflow:auto;
+  max-height:260px;
+}
+.sbuy>li{
+  border-bottom: 1px solid #ddd;
+  line-height: 40px;
+  padding: 10px 0;
+  margin:0  15px;
+}
+.sbuy>li>img{
+  width: 40px;
+  vertical-align: middle;
+  float: left;
+  margin-left: 10px;
+}
+.sbuy>li>span{
+  width: 40px;
+  float: left;
+  margin-left: 20px;
+}
+.sbuy>li>b{
+  color: #f9398a;
+  font-size: bold;
+}
+.sbuy>a{
+  color: #00d !important;
+}
+.sbuy>a:hover{
+  color: #00d !important;
+}
+#w .sbuy>li>a{
+  float:right;
+  font-size:25px;
+  opacity:0;
+  transition:opacity .5s;
+  cursor:pointer;
+  color:#000;
+  margin-top:-5px;
+  margin-right:5px;
+}
+#w .sbuy>li:hover>a{opacity:1;color:#000;}
+
+
+
+
+
+
+
+
+/* 导航栏  */
+#nav>ul>li{
+	float: left;
+}

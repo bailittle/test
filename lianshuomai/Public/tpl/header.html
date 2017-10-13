@@ -1,0 +1,34 @@
+    <div id="big_nav" class="clear">
+      <ul class="ui-l">
+        <li><a href="#">你好，欢迎来到连锁卖！</a></li>
+        <if condition='$username'>
+        	<div class="lf">
+        		<span>欢迎回来: {$username}</span>
+        		&nbsp;&nbsp;&nbsp;|&nbsp;
+                <a href="__APP__/Home/Login/close">退出登录</a>
+        	</div>
+        <else />
+            <div class="lf">
+            	<a href="__APP__/Home/Login/login">请登录</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="__APP__/Home/User/register">免费注册</a>
+            </div>
+        </if>      
+      </ul>
+      <ul class="ui-r">
+        <li><a href="__APP__/Home/Index/index">连锁卖首页</a></li>
+        <li id="my_list"><a href="#">我的连锁卖<b></b></a>
+        <div id="core">
+          <ul>
+           <if condition='$username'>
+               <li><a href="__APP__/Home/User/home">会员中心</a></li>
+           <else />
+               <li><a href="javascript:;">会员中心</a></li>
+           </if>
+           <li><a href="#">通卡中心</a></li>
+           <li><a href="#">资金中心</a></li>
+          </ul>
+        </div>
+        </li>
+        <li><a href="#">帮助中心</a></li>
+      </ul>
+    </div>
